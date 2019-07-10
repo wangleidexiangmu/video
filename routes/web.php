@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('oss1','Test\Testcontroller@oss1');
 Route::get('oss2','Test\Testcontroller@oss2');
+Route::get('oss3','Test\Testcontroller@oss3');
