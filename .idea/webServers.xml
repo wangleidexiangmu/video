@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f02bbeb0-9813-4a71-b8fc-f8ce646f52d8" name="adsd" url="http://123.56.221.235">
+        <fileTransfer host="123.56.221.235" port="22" rootFolder="/www/video" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
