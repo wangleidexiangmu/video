@@ -9,7 +9,7 @@
 </head>
 <body>
         <div>
-            <video src="/storage/{{$data['path']}}" controls="controls"></video>
+            <video src="{{env('addres')}}{{$data['path']}}" controls="controls"></video>
         </div>
 </body>
 </html>
