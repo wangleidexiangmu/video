@@ -65,7 +65,7 @@ class TestController extends Controller
     }
     public function add(){
        $data=video::first()->toArray();
-       //var_dump($data);
+       var_dump($data);
        return view('video.video',['data'=>$data]);
     }
 }
