@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use APP\Http\Controllers;
 use Illuminate\Support\Str;
 use OSS\OssClient;
+use App\Model\video;
 class TestController extends Controller
 {
     protected $acessKeyId = 'LTAIIsaeBnd5NV1n';
@@ -61,5 +62,10 @@ class TestController extends Controller
             unlink($local_file);
         }
 
+    }
+    public function add(){
+       $data=video::first()->toArray();
+       //var_dump($data);
+       return view('video.video',['data'=>$data]);
     }
 }
