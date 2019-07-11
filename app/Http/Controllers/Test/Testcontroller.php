@@ -46,7 +46,7 @@ class TestController extends Controller
                 continue;
             }
             //上传
-            $file_name=Str::random(5).'.jpg';
+            $file_name='files/'.$v;
             $local_file=$file_path.'/'.$v;
             echo '本地文件:'.$local_file;echo '</br>';
             //$rs=$client->uploadFile($this->bucket,$file_name,$file_path.'/');
