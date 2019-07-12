@@ -63,8 +63,9 @@ class TestController extends Controller
         }
 
     }
-    public function add(){
-       $data=video::first()->toArray();
+    public function detail(){
+        $id=$_GET['vid'];
+       $data=video::where(['vid'=>$id])->first()->toArray();
       // var_dump($data);
        return view('video.video',['data'=>$data]);
     }
